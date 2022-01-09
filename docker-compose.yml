@@ -9,6 +9,8 @@ services:
       context: ./
       dockerfile: Dockerfile
       target: local
+    volumes:
+      - ".:/app"
     ports:
       - "7777:80"
 
